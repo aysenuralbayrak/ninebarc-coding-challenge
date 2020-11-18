@@ -287,13 +287,10 @@ class Questionnaire extends Component {
             }
         ]
     }
-    onComplete(survey, options) {
-        //Write survey results into database
-        console.log("Survey results: " + JSON.stringify(survey.data));
-    }
+   
     render() {
         var model = new Survey.Model(this.json);
-        return (<Survey.Survey model={model} onComplete={this.onComplete} />);
+        return (<Survey.Survey model={model}/>);
     }
 
 }

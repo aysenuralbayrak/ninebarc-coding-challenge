@@ -83,8 +83,12 @@
     cursor: pointer;
 }
 .sv_complete_btn{
+   
+    display: none;
+}
+.sv_preview_btn{
     border-radius: 35px;
-    background: rgb(104, 44, 44);
+    background: rgb(185, 184, 184);
     color: white;
     width: 80px;
     height: 30px;
@@ -118,9 +122,6 @@ input[type=text]{
     font-style: italic;
     color: rgb(102, 102, 102);
 
-}
-.sv_complete_btn{
-    display: none;
 }
 
 .starting-message{
