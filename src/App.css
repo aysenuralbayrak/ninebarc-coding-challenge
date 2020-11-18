@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+/*-----------------------------HEADER STYLING----------------------------*/
+.header_logo{
+    max-width:100%;
+    width:100%;
+
+}
+@media only screen and (min-width : 1025px) {
+    .header_container {
+         padding: 5px 0 4%;
+     }
+ }
+ /*-----------------------------------------------------------------------*/
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .questionnaire {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+ }
+ 
+@media only screen and (max-width : 560px) {
+   .questionnaire {
+        width: 100%;
+    }
+}
+.sv_q_title {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    letter-spacing: 2px;
+    color: rgb(102, 102, 102);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sv_body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.sv_p_root{
+    height: 150px;
+  
+}
+.sv_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.sv_q_description{
+    color:rgb(180, 58, 58);
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sv_q_radiogroup_label{
+    color: rgb(102, 102, 102);
+    font-size: 17px;
+    margin-bottom: 5px;
+    
+}
+.sv_prev_btn{
+    border-radius: 35px;
+    background: rgb(185, 184, 184);
+    color: white;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+.sv_next_btn{
+    border-radius: 35px;
+    background: rgb(185, 184, 184);
+    color: white;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+.sv_complete_btn{
+    border-radius: 35px;
+    background: rgb(104, 44, 44);
+    color: white;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+#sq_100_errors{
+    color:rgb(180, 58, 58);
+    font-size: x-small;
+    font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sv_q_text_root{
+    width: 500px;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.sv_q_text_root:focus{
+  outline: none;
+}
+input[type=text]{
+    color: rgb(102, 102, 102);
+    text-transform: uppercase;
+}
+.ticket-message{
+    width: 500px;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(102, 102, 102);
+
+}
+.sv_complete_btn{
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.starting-message{
+    color: rgb(102, 102, 102);
 }
